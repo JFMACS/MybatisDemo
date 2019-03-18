@@ -17,6 +17,8 @@
         <property name="prefix" value="/WEB-INF/jsp/" />
         <property name="suffix" value=".jsp"/>
     </bean>
+    <!-- 支持上传文件 -->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver" />
     <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping" />
     <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
         <property name="messageConverters">
